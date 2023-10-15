@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - otsuka-test-nextjs-20231014
+name: Build and deploy Node.js app to Azure Web App - otsuka-test2-20231015
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: "otsuka-test-nextjs-20231014"
+          app-name: "otsuka-test2-20231015"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4A30439899F848B2825339DB881B0934 }}
           package: .
